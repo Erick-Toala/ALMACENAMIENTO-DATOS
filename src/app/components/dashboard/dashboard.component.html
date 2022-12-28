@@ -1,0 +1,23 @@
+<!-- contenido principal del sistema-->
+<div class="inicio_contenido">
+    <div class="contenido_pagina">
+        <div class="texto">Dashboard</div>
+        <!-- Mostrará una lista de todas las habitaciones del hotel LOCAL STORAGE-->
+        <div class="habitaciones_lista">
+            <!-- cada habitación se contendrá en una caja y estas tendrán un id único, 
+            con sus categoria y el estado en que se encuentre-->
+            <div class="habitaciones_box" *ngFor="let habitaciones of habitaciones" >
+                    <!-- habitación 001-->
+                    <div class="habitacion">
+                        <img src="habitaciones/habitacion1.jpg">
+                        <div class="detalle_titulo">Habitación NRO: {{habitaciones.numero}}</div>
+                        <div class="detalle_categoria">Categoria: {{habitaciones.categoria}}</div>
+                        <div class="detalle_disponibilidad_limpieza">Estado: Limpieza ></div>
+                    </div>
+            </div>
+            
+        </div>
+        <!-- fin del listado de habitaciones, este listado será generado por la base de datos, 
+        por ahora solo es un diseño -->
+    </div>
+</div>
